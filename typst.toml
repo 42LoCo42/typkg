@@ -1,0 +1,4 @@
+[package]
+name = "iu"
+version = "1.0.0"
+entrypoint = "lib.typ"
