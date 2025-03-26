@@ -1,4 +1,8 @@
-#let template(course: str, tutor: str) = (doc) => [
+#let template(
+  course: str,
+  tutor: str,
+  lang: "de",
+) = (doc) => [
   #set page(
     // Papierformat: DIN A4
     paper: "a4",
@@ -11,7 +15,7 @@
   )
 
   #set text(
-    lang: "de",
+    lang: lang,
 
     // Schrifttyp: Arial (Sans) 11pt
     font: "Liberation Sans",
