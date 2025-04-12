@@ -1,6 +1,7 @@
 #let template(
   course: str,
   tutor: str,
+  what: "Advanced Workbook",
   lang: "de",
 ) = (doc) => [
   #set page(
@@ -29,7 +30,7 @@
 
   #align(center + horizon)[
     // Art der Arbeit
-    #text(size: 30pt)[Advanced Workbook]
+    #text(size: 30pt)[#what]
 
     // Studiengang - Kursbezeichnung
     #text(size: 26pt)[Cybersecurity - #course]
