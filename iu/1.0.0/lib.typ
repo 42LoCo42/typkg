@@ -144,3 +144,15 @@
 
   #doc
 ]
+
+#let figure2(
+  caption,
+  content,
+  origin,
+  alignment: center,
+) = align(alignment, grid(
+  inset: 1.5pt,
+  align: center,
+  figure(content, caption: figure.caption(caption, position: top)),
+  [Quelle: #origin],
+))
