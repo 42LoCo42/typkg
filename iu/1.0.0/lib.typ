@@ -149,10 +149,14 @@
   caption,
   content,
   origin,
+  lbl: none,
   alignment: center,
 ) = align(alignment, grid(
   inset: 1.5pt,
   align: center,
-  figure(content, caption: figure.caption(caption, position: top)),
+  [ #figure(
+    content,
+    caption: figure.caption(caption, position: top),
+  ) #if(lbl != none){ label(lbl) } ],
   [Quelle: #origin],
 ))
