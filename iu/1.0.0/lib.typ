@@ -45,11 +45,18 @@
         // Matrikelnummer
         Mat.\#: IU14104259
       ], //
-      text(size: 22pt)[
-        // Name Tutor
-        #tutor \
-        Tutor
-      ]
+      text(
+        size: 22pt,
+
+        // Name(n) Tutor(en)
+        if type(tutor) == array {
+          tutor.join("\n")
+          "\nTutoren"
+        } else {
+          tutor
+          "\nTutor"
+        },
+      )
     )
 
     #parbreak() \
