@@ -1,5 +1,7 @@
 [set]
-packages = []
+packages = [
+  "iu",
+]
 
 [metadata]
 tags = []

@@ -1,0 +1,9 @@
+[package]
+label = "iu"
+version = "1.0.0"
+
+[package.sets]
+atom = "https://github.com/ekala-project/atom"
+
+[compose.with.atom-nix]
+from = "atom"
